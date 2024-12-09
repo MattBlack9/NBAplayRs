@@ -17,13 +17,24 @@ library(coda)
 #'
 #' @param decade the years wanted
 #' @param team the team wanted
-#' @param list 
+#' @param list an empty list to fill
 #'
-#' @return the list of players from the team
+#' @return the list of players from specific team wanted
 #' @export
 #'
 #' @examples
+#' load("data/playoff_games.rda")
+#' load("data/regular_season.rda")
+#' load("data/names.rda")
+#' source("R/filter_teams1_wrapper.R")
 #' 
+#' names(playoff_games) <- names
+#' names(regular_season) <- names
+#' 
+#' three_teams_80s <- filter_teams1(1980,1990,regular_season,'BOS','DET','LAL')
+#' 
+#' output <- list()
+#' boston <- cleaning(three_teams_80s, 'BOS', output)
 
 
 cleaning <- function(decade,team,list){

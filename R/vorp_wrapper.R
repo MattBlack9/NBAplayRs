@@ -15,13 +15,26 @@ library(coda)
 
 #' Title
 #'
-#' @param df Dataframe
+#' @param df dataframe of the team and players
 #'
 #' @return the adjusted vorp of players
 #' @export
 #'
 #' @examples
+#' load("data/playoff_games.rda")
+#' load("data/regular_season.rda")
+#' load("data/names.rda")
+#' source("R/filter_teams1_wrapper.R")
 #' 
+#' names(playoff_games) <- names
+#' names(regular_season) <- names
+#' 
+#' three_teams_80s <- filter_teams1(1980,1990,regular_season,'BOS','DET','LAL')
+#' 
+#' output <- list()
+#' boston <- cleaning(three_teams_80s, 'BOS', output)
+#' 
+#' bos_vorp <- vorp(boston[[1]])
 
 
 vorp <- function(df){
