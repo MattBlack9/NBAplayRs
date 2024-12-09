@@ -39,3 +39,5 @@ cleaning <- function(decade,team,list){
   }
   return(list)
 }
+
+
