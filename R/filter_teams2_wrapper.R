@@ -15,18 +15,26 @@ library(coda)
 
 #' Title
 #'
-#' @param first 
-#' @param last
-#' @param part
-#' @param team1
-#' @param team2
-#' @param team3
-#' @param team4
+#' @param first the first year desired
+#' @param last the last year desired
+#' @param part which part of the season desired
+#' @param team1 first team wanted
+#' @param team2 second team wanted
+#' @param team3 third team wanted
+#' @param team4 forth team wanted
 #'
-#' @return the adjusted vorp of players
+#' @return returns all of the players stats from the desired teams in the decade
 #' @export
 #'
 #' @examples
+#' load("data/playoff_games.rda")
+#' load("data/regular_season.rda")
+#' load("data/names.rda")
+#' 
+#' names(playoff_games) <- names
+#' names(regular_season) <- names
+#' 
+#' four_teams_00s <- filter_teams2(2000,2010,regular_season,'LAL','BOS','DET','SAS')
 
 filter_teams2 <- function(first,last,part,team1,team2,team3,team4){
   temp <- part$year >= first & part$year < last
@@ -37,3 +45,5 @@ filter_teams2 <- function(first,last,part,team1,team2,team3,team4){
   df <- filter(test,correct == T & cteams == T)
   return(df)
 }
+
+
