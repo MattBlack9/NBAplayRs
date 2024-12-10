@@ -1,17 +1,6 @@
-library(lookup)
-library(tidyverse)
-library(rvest)
-library(lubridate)
-library(readxl)
 library(dplyr)
-library(readxl)
-library(aod)
-library(ggplot2)
 library(tidyr)
-library(stringr)
-library(lookup)
-library(reshape)
-library(coda)
+library(ggplot2)
 
 #' Title
 #'
@@ -23,10 +12,9 @@ library(coda)
 #' @export
 #'
 #' @examples
-#' load("data/playoff_games.rda")
-#' load("data/regular_season.rda")
-#' load("data/names.rda")
-#' source("R/filter_teams1_wrapper.R")
+#' data("playoff_games")
+#' data("regular_season")
+#' data("names")
 #' 
 #' names(playoff_games) <- names
 #' names(regular_season) <- names

@@ -14,7 +14,6 @@
 #' @source by using the functions in this package
 "bulls"
 
-
 #' The Cleveland Caveliers player stats
 #'
 #' @format ## `caveliers`
@@ -30,7 +29,6 @@
 #' }
 #' @source by using the functions in this package
 "caveliers"
-
 
 #' The Boston Celtics player stats
 #'
@@ -48,7 +46,6 @@
 #' @source by using the functions in this package
 "celtics"
 
-
 #' The Miami Heat player stats
 #'
 #' @format ## `heat`
@@ -64,7 +61,6 @@
 #' }
 #' @source by using the functions in this package
 "heat"
-
 
 #' The Chicago Bulls player stats
 #'
@@ -82,7 +78,6 @@
 #' @source by using the functions in this package
 "bulls"
 
-
 #' The Utah Jazz player stats
 #'
 #' @format ## `jazz`
@@ -98,7 +93,6 @@
 #' }
 #' @source by using the functions in this package
 "jazz"
-
 
 #' The Los Angeles Lakers player stats
 #'
@@ -116,7 +110,6 @@
 #' @source by using the functions in this package
 "lakers"
 
-
 #' The names of the dataframe's columns
 #'
 #' @format ## `names`
@@ -126,7 +119,6 @@
 #' }
 #' @source custom picked column names
 "names"
-
 
 #' The list of all recorded post season NBA games
 #'
@@ -148,7 +140,6 @@
 #' @source by using the functions in this package
 "playoff_games"
 
-
 #' The list of all recorded regular season NBA games
 #'
 #' @format ## `regular_season`
@@ -169,7 +160,6 @@
 #' @source by using the functions in this package
 "regular_season"
 
-
 #' The Houston Rockets player stats
 #'
 #' @format ## `rockets`
@@ -186,7 +176,6 @@
 #' @source by using the functions in this package
 "rockets"
 
-
 #' The San Antonio Spurs player stats
 #'
 #' @format ## `spurs`
@@ -202,7 +191,6 @@
 #' }
 #' @source by using the functions in this package
 "spurs"
-
 
 #' The Golden State Warriors player stats
 #'

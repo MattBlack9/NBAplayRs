@@ -26,9 +26,9 @@ library(coda)
 #' @export
 #'
 #' @examples
-#' load("data/playoff_games.rda")
-#' load("data/regular_season.rda")
-#' load("data/names.rda")
+#' data("playoff_games")
+#' data("regular_season")
+#' data("names")
 #' 
 #' names(playoff_games) <- names
 #' names(regular_season) <- names

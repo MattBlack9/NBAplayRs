@@ -17,8 +17,8 @@ library(ggplot2)
 #' @export
 #'
 #' @examples
-#' load("data/jazz.rda")
-#' load("data/bulls.rda")
+#' data("jazz")
+#' data("bulls")
 #' 
 #' post('jordami01','malonka01',bulls,jazz, mine = 'Michael Jordan',mine2 = 'Karl Malone')
 

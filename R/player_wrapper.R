@@ -10,7 +10,7 @@ library(ggplot2)
 #' @export
 #'
 #' @examples
-#' load("data/lakers.rda")
+#' data("lakers")
 #' 
 #' player('abdulka01',lakers)
 

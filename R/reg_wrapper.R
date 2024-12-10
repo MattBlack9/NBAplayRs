@@ -15,8 +15,8 @@ library(ggplot2)
 #' @export
 #'
 #' @examples
-#' load("data/jazz.rda")
-#' load("data/warriors.rda")
+#' data("jazz")
+#' data("warriors")
 #' 
 #' reg('curryst01','malonka01',warriors,jazz)
 

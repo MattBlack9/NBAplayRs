@@ -10,7 +10,7 @@ library(ggplot2)
 #' @export
 #'
 #' @examples
-#' load("data/heat.rda")
+#' data("heat")
 #' 
 #' scatt(heat)
 
