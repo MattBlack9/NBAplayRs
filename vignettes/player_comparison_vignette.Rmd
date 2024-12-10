@@ -34,13 +34,35 @@ Adjusted VORP is calculated to get rid of all various effects and measure an ind
 
 
 ## Reading in the Data
+The first step of measuring performance is by reading in the required data of games. Fortunately, these have been already added into the package. Hence, no reading in is actually required. For an overview of the data added, here is a few rows.
+```{r}
+head(regular_season)
+```
 
+There is the data of all recorded regular season games and post season games in this package. 
 
 ## Gathering the Data
+The next step is gathering the data. The data for NBA players can be found on www.basketballreference.com, which will be used in this package. There are a lot of functions that need to be used prior to gathering the data from the website though.
+
+```{r}
+names(regular_season) <- names
+my_list <- list()
+reg.80 <- filter_teams1(1980,1990,regular_season,'BOS','DET','LAL')
+boston.80 <- cleaning(reg.80,'BOS',my_list)
+```
+
+These two functions clean up all of the games to specific times and teams. This makes the webscraping more manageable. Next, the VORP is calculated while webscraping. For this example, only one data point will be used as this can be very computational challenging and time consuming. 
+
+```{r}
+vorp(boston.80[[1]][1,])
+```
 
 
 ## Cleaning the Data
+The next step is cleaning the data that was gathered. The adjusted VORP of the year can be calculated with another function in the package.
+```{r}
 
+```
 
 ## Measuring a Single PLayer's Performance
 
