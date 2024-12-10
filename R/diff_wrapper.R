@@ -24,8 +24,8 @@ diff <- function(player1,player2,team1,team2,player3=NULL,team3=NULL,player4=NUL
   if(is.null(player3) == TRUE){
     temp1 <- filter(team1,player==player1)
     temp2 <- filter(team2,player==player2)
-    temp1$xax <- seq_along(temp1[, 1])
-    temp2$xax <- seq_along(temp2[, 1])
+    temp1$xax <- seq_along(temp1$player)
+    temp2$xax <- seq_along(temp2$player)
     
     df <- data.frame()
     df <- rbind(df,temp1,temp2)
@@ -43,9 +43,9 @@ diff <- function(player1,player2,team1,team2,player3=NULL,team3=NULL,player4=NUL
     temp1 <- filter(team1,player==player1)
     temp2 <- filter(team2,player==player2)
     temp3 <- filter(team3,player==player3)
-    temp1$xax <- seq_along(temp1[, 1])
-    temp2$xax <- seq_along(temp2[, 1])
-    temp3$xax <- seq_along(temp3[,1])
+    temp1$xax <- seq_along(temp1$player)
+    temp2$xax <- seq_along(temp2$player)
+    temp3$xax <- seq_along(temp3$player)
     
     df <- data.frame()
     df <- rbind(df,temp1,temp2,temp3)
@@ -66,10 +66,10 @@ diff <- function(player1,player2,team1,team2,player3=NULL,team3=NULL,player4=NUL
     temp2 <- filter(team2,player==player2)
     temp3 <- filter(team3,player==player3)
     temp4 <- filter(team4,player==player4)
-    temp1$xax <- seq_along(temp1[, 1])
-    temp2$xax <- seq_along(temp2[, 1])
-    temp3$xax <- seq_along(temp3[,1])
-    temp4$xax <- seq_along(temp4[,1])
+    temp1$xax <- seq_along(temp1$player)
+    temp2$xax <- seq_along(temp2$player)
+    temp3$xax <- seq_along(temp3$player)
+    temp4$xax <- seq_along(temp4$player)
     
     df <- data.frame()
     df <- rbind(df,temp1,temp2,temp3,temp4)
