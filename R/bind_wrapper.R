@@ -32,12 +32,12 @@ library(coda)
 #' individual(vor, 1985, 'BOS-1985', 'regular')
 
 
-individual <- function(year, time, team, reg_post){
+bind <- function(year, time, team, reg_post){
   df <- filter(year, season_id==team)
   new <- data.frame()
   for(i in unique(df$player)){
     per <- filter(df,player==i)
-    score <- mean(per$VORP)
+    score <- mean(as.numeric(per$VORP))
     adder <- data.frame(player = i, TVORP = score, year = time, time = reg_post)
     new <- rbind(new,adder)
   }
