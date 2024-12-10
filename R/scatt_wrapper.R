@@ -2,16 +2,19 @@ library(tidyverse)
 library(ggplot2)
 #' Title
 #'
-#' @param decade the years wanted
-#' @param team the team wanted
-#' @param list 
+#' @param data the dataframe of the team interested
+#' @param years the years that is wanted to see
+#' @param mine the plot's title
 #'
-#' @return the list of players from the team
+#' @return scatterplot of a teams perfomance comparing the adjusted vorp of the regular season to the post season
 #' @export
 #'
 #' @examples
+#' load("data/heat.rda")
+#' 
+#' scatt(heat)
 
-scatt <- function(data,years=NULL, mine = NULL){
+scatt <- function(data,years = NULL, mine = NULL){
   if(is.null(mine) == TRUE){
     mine <- 'Team Performance'
   }

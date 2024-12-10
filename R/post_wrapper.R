@@ -2,14 +2,25 @@ library(tidyverse)
 library(ggplot2)
 #' Title
 #'
-#' @param decade the years wanted
-#' @param team the team wanted
-#' @param list 
+#' @param player1 the first player wanting to be compared
+#' @param player2 the second player wanting to be compared
+#' @param team1 the first player's team
+#' @param team2 the second player's team
+#' @param player3 the third player wanting to be compared
+#' @param team3 the third player's team
+#' @param player4 the fourth player wanting to be compared
+#' @param team4 the fourth player's team
+#' @param mine the first player's name
+#' @param mine2 the second player's name
 #'
-#' @return the list of players from the team
+#' @return a line graph comparing two player's post seasons
 #' @export
 #'
 #' @examples
+#' load("data/jazz.rda")
+#' load("data/bulls.rda")
+#' 
+#' post('jordami01','malonka01',bulls,jazz, mine = 'Michael Jordan',mine2 = 'Karl Malone')
 
 
 post <- function(player1,player2,team1,team2,player3=NULL,team3=NULL,player4=NULL,team4=NULL,mine = NULL, mine2 = NULL){

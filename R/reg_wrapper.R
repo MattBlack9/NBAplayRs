@@ -2,14 +2,23 @@ library(tidyverse)
 library(ggplot2)
 #' Title
 #'
-#' @param decade the years wanted
-#' @param team the team wanted
-#' @param list 
+#' @param player1 the first player wanting to be compared
+#' @param player2 the second player wanting to be compared
+#' @param team1 the first player's team
+#' @param team2 the second player's team
+#' @param player3 the third player wanting to be compared
+#' @param team3 the third player's team
+#' @param player4 the fourth player wanting to be compared
+#' @param team4 the fourth player's team
 #'
-#' @return the list of players from the team
+#' @return a line graph comparing two player's regular seasons
 #' @export
 #'
 #' @examples
+#' load("data/jazz.rda")
+#' load("data/warriors.rda")
+#' 
+#' reg('curryst01','malonka01',warriors,jazz)
 
 reg <- function(player1,player2,team1,team2,player3=NULL,team3=NULL,player4=NULL,team4=NULL){
   if(is.null(player3) == TRUE){

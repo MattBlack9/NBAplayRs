@@ -2,14 +2,17 @@ library(tidyverse)
 library(ggplot2)
 #' Title
 #'
-#' @param decade the years wanted
+#' @param play the desired player
 #' @param team the team wanted
-#' @param list 
+#' @param titles the title of the graph 
 #'
-#' @return the list of players from the team
+#' @return a plot comparing a player's regular season to post season
 #' @export
 #'
 #' @examples
+#' load("data/lakers.rda")
+#' 
+#' player('abdulka01',lakers)
 
 player <- function(play, team, titles = "Player Performance"){
   temp <- filter(team, player == play)

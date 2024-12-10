@@ -25,6 +25,7 @@ library(coda)
 #' load("data/regular_season.rda")
 #' load("data/names.rda")
 #' source("R/filter_teams1_wrapper.R")
+#' source("R/cleaning_wrapper.R")
 #' 
 #' names(playoff_games) <- names
 #' names(regular_season) <- names
