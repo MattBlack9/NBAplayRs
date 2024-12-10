@@ -1,5 +1,5 @@
 ---
-title: "player_comparison_vignette"
+title: "Player Analysis Workflow"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{player_comparison_vignette}
@@ -17,3 +17,37 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(NBAplayRs)
 ```
+
+The purpose of the NBAplayRs package is to help others measure individual performance in the NBA and compare their regular and post season performance.
+
+This is a difficult challenge as there is a lot of confounding factors while trying to measure performance, such as where the game was played, the player who is guarding them, who is on the court from their team, who is on the court from the opposing team, and more. This package utilizes a known metric VORP. This can then be further used to calculate the adjusted VORP of an individual.
+
+Adjusted VORP is calculated to get rid of all various effects and measure an individual's performance. 
+
+## NBAplayRs Workflow Overview
+1. Reading in the Data
+2. Gathering the Data
+3. Cleaning the Data
+4. Measuring a Single Player's Performance
+5. Measuring Two Player's Performances
+^ Seeing How a Team Performed Over a Season
+
+
+## Reading in the Data
+
+
+## Gathering the Data
+
+
+## Cleaning the Data
+
+
+## Measuring a Single PLayer's Performance
+
+
+## Measuring Two Player's Performances
+
+
+## Seeing How a Team Performed Over a Season
+
+
