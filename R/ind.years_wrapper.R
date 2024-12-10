@@ -36,7 +36,8 @@ library(coda)
 #' 
 #' output <- list()
 #' boston <- cleaning(three_teams_80s, 'BOS', output)
-#' bos.reg.80years <- c('celtics.reg85.csv','celtics.reg88.csv','celtics.reg89.csv','celtics.reg86.csv','celtics.reg87.csv')
+#' bos.reg.80years <- c('celtics.reg85.csv','celtics.reg88.csv','celtics.reg89.csv',
+#' 'celtics.reg86.csv','celtics.reg87.csv')
 #' 
 #' boston <- ind.years(boston, bos.reg.80years)
 
