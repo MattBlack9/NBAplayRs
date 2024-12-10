@@ -16,3 +16,4 @@ BuildType: Package
 PackageUseDevtools: Yes
 PackagePath: /Users/matty/Documents/Texas A&M/STAT 600/NBAplayRs
 PackageInstallArgs: --no-multiarch --with-keep.source
+PackageBuildArgs: --resave-data

@@ -7,17 +7,17 @@ Author: person("Matthew","Blackley", email = "mtb77@tamu.edu",role = c("aut","cr
 Maintainer: Matthew Blackley <mtb77@tamu.edu>
 Description: This package scrapes the internet from an open source website to get the stats of nba teams with the goal of measuring regular season performance compared to post season performance.
 License: GPL (>= 3)
-Imports: aod (>= 1.3.3),
-  coda (>= 0.19.4.1),
-  dplyr (>= 1.1.4),
-  ggplot2 (>= 3.5.1),
-  lubridate (>= 1.9.3),
-  lookup (>= 1.0),
-  readxl (>= 1.4.3),
-  reshape (>= 0.8.9),
-  rvest (>= 1.0.4),
-  stringr (>= 1.5.1),
-  tidyr (>= 1.3.1),
-  tidyverse (>= 2.0.0)
+Imports: dplyr,
+  ggplot2,
+  lubridate,
+  readxl,
+  rvest,
+  tidyr,
+  stringr
 RoxygenNote: 7.3.2
 Encoding: UTF-8
+LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

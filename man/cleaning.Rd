@@ -11,11 +11,24 @@ cleaning(decade, team, list)
 
 \item{team}{the team wanted}
 
-\item{list}{}
+\item{list}{an empty list to fill}
 }
 \value{
-the list of players from the team
+the list of players from specific team wanted
 }
 \description{
 Title
+}
+\examples{
+data("playoff_games")
+data("regular_season")
+data("names")
+
+names(playoff_games) <- names
+names(regular_season) <- names
+
+three_teams_80s <- filter_teams1(1980,1990,regular_season,'BOS','DET','LAL')
+
+output <- list()
+boston <- cleaning(three_teams_80s, 'BOS', output)
 }

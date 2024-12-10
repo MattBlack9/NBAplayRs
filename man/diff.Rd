@@ -16,15 +16,31 @@ diff(
 )
 }
 \arguments{
-\item{decade}{the years wanted}
+\item{player1}{the first player wanting to be compared}
 
-\item{team}{the team wanted}
+\item{player2}{the second player wanting to be compared}
 
-\item{list}{}
+\item{team1}{the first player's team}
+
+\item{team2}{the second player's team}
+
+\item{player3}{the third player wanting to be compared}
+
+\item{team3}{the third player's team}
+
+\item{player4}{the fourth player wanting to be compared}
+
+\item{team4}{the fourth player's team}
 }
 \value{
-the list of players from the team
+plot showing the difference in regular season performance and post season performance
 }
 \description{
 Title
+}
+\examples{
+data("jazz")
+data("warriors")
+
+diff('curryst01','malonka01',warriors,jazz)
 }

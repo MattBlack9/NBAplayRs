@@ -7,15 +7,20 @@
 player(play, team, titles = "Player Performance")
 }
 \arguments{
+\item{play}{the desired player}
+
 \item{team}{the team wanted}
 
-\item{decade}{the years wanted}
-
-\item{list}{}
+\item{titles}{the title of the graph}
 }
 \value{
-the list of players from the team
+a plot comparing a player's regular season to post season
 }
 \description{
 Title
+}
+\examples{
+data("lakers")
+
+player('abdulka01',lakers)
 }

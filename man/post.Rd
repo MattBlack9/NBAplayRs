@@ -18,15 +18,35 @@ post(
 )
 }
 \arguments{
-\item{decade}{the years wanted}
+\item{player1}{the first player wanting to be compared}
 
-\item{team}{the team wanted}
+\item{player2}{the second player wanting to be compared}
 
-\item{list}{}
+\item{team1}{the first player's team}
+
+\item{team2}{the second player's team}
+
+\item{player3}{the third player wanting to be compared}
+
+\item{team3}{the third player's team}
+
+\item{player4}{the fourth player wanting to be compared}
+
+\item{team4}{the fourth player's team}
+
+\item{mine}{the first player's name}
+
+\item{mine2}{the second player's name}
 }
 \value{
-the list of players from the team
+a line graph comparing two player's post seasons
 }
 \description{
 Title
+}
+\examples{
+data("jazz")
+data("bulls")
+
+post('jordami01','malonka01',bulls,jazz, mine = 'Michael Jordan',mine2 = 'Karl Malone')
 }

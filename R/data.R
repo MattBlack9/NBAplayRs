@@ -114,9 +114,6 @@
 #'
 #' @format ## `names`
 #' A vector of names
-#' \describe{
-#'   \item{names of the columns}
-#' }
 #' @source custom picked column names
 "names"
 
@@ -207,3 +204,13 @@
 #' }
 #' @source by using the functions in this package
 "warriors"
+
+#' The Golden State Warriors player stats
+#'
+#' @format ## `reg.bos.80`
+#' A list containing multiple years of the Boston Celtics stats
+#' \describe{
+#'   \item{list}{list of the stats}
+#' }
+#' @source by using the functions in this package
+"reg.bos.80"

@@ -1,0 +1,1 @@
+utils::globalVariables(c("teamer", "DVORP", "RVORP", "PVORP", "correct", "cteams", "xax", "win"))

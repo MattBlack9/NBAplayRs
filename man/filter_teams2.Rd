@@ -7,13 +7,33 @@
 filter_teams2(first, last, part, team1, team2, team3, team4)
 }
 \arguments{
-\item{first}{}
+\item{first}{the first year desired}
 
-\item{team4}{}
+\item{last}{the last year desired}
+
+\item{part}{which part of the season desired}
+
+\item{team1}{first team wanted}
+
+\item{team2}{second team wanted}
+
+\item{team3}{third team wanted}
+
+\item{team4}{forth team wanted}
 }
 \value{
-the adjusted vorp of players
+returns all of the players stats from the desired teams in the decade
 }
 \description{
 Title
+}
+\examples{
+data("playoff_games")
+data("regular_season")
+data("names")
+
+names(playoff_games) <- names
+names(regular_season) <- names
+
+four_teams_00s <- filter_teams2(2000,2010,regular_season,'LAL','BOS','DET','SAS')
 }

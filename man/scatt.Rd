@@ -7,15 +7,20 @@
 scatt(data, years = NULL, mine = NULL)
 }
 \arguments{
-\item{decade}{the years wanted}
+\item{data}{the dataframe of the team interested}
 
-\item{team}{the team wanted}
+\item{years}{the years that is wanted to see}
 
-\item{list}{}
+\item{mine}{the plot's title}
 }
 \value{
-the list of players from the team
+scatterplot of a teams perfomance comparing the adjusted vorp of the regular season to the post season
 }
 \description{
 Title
+}
+\examples{
+data("heat")
+
+scatt(heat)
 }

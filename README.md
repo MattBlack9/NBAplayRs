@@ -8,4 +8,4 @@ The goal of this package is to help measure an individual’s performance in the
 One can download this package via github by using the following code once completed:
 devtools::install_github("MattBlack9/NBAplayRs")
 
-What else is needed in the package is cleaning up some of the roxygen skeletons, adding more of the example data, and finishing cleaning up the wrappers for each function. I went with an individual file for each function because it helps me with organization. I still need to extract, clean, and update a few. Extra R files are present because of this. 
+
