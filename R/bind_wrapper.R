@@ -29,7 +29,7 @@ library(coda)
 #' test <- reg.bos.80[[1]][1,]
 #' vor <- vorp(test)
 #' 
-#' individual(vor, 1985, 'BOS-1985', 'regular')
+#' bind(vor, 1985, 'BOS-1985', 'regular')
 
 
 bind <- function(year, time, team, reg_post){
